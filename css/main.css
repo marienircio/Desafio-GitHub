@@ -1,0 +1,224 @@
+h1{                         /* Es el estilo del titulo principal el cual es el Logo */
+    text-align: center;
+    margin:0px;
+    height: 200px;
+}
+
+header{
+    height: 200px;
+}
+.navegador{                 /*Es el estilo del navegador*/
+    padding: 10px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #800d0d;
+}
+
+.navegador li a{
+    text-decoration: none;
+    color: black;
+    font-size:2em;
+    font-family: 'Cuprum', sans-serif;
+}
+
+li:hover{
+    transform: scale(1,1.5);
+}
+/*.navegador{
+    transition: height 2s;
+}
+
+.navegador :hover{
+    height: 50px;
+    background-color:#800d0d;
+} */
+/*.animacion{
+    transition: height 1s;
+}
+
+.animacion :hover{
+    height: 100px;
+    background-color: #800d0d;
+} */
+
+.navegador li a:hover{
+    height: 100px;
+}
+#logo{
+    height: 200px;
+    width: 200px;
+}
+
+body{
+    margin:0px;
+}
+
+h2{                     /*Son los estilos de los títulos secundarios*/
+    font-family: 'Bebas Neue', cursive;
+    font-size:4em;
+    padding-left: 50px;
+}
+
+.imagenes-principales{
+    height: 400px;
+    width: 500px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+.imagen-pequeña{
+    height: 200px;
+    width:200px;
+    padding-right: 10px;
+}
+
+.redes{
+    height: 50px;
+    width: 50px;
+}
+
+#pie-pagina{                /*Es el estilo del pie de página de todas las secciones */
+    list-style-type: none;
+    width: 250px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pie-pagina li a{
+    text-decoration: none;
+}
+
+.alineacion-horizontal{
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.alineacion-derecha{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 600px;
+}
+
+.titulo-mediano{
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Cuprum', sans-serif;
+    color:maroon;
+}
+
+.texto{
+    text-align:justify;
+    font-size: 20px;
+
+}
+
+.botones{
+    height: 20px;
+    text-align: center;
+}
+
+.boton-mediano{
+    height: 15px;
+    color: beige;
+}
+
+h3{
+    font-size: 20px;
+    font-family: 'Cuprum', sans-serif;
+}
+
+
+ header {
+    grid-area: header;
+    text-align: center;
+ }
+ footer {
+    grid-area: footer;
+    background-color: #800d0d;
+ }
+
+ section#peliculas {
+    grid-area: peliculas;
+    padding: 5px;
+    margin-top: 230px;     
+ }
+
+ section#busqueda{
+    grid-area: busqueda;
+    height: 10px;
+    align-self: end;
+    padding-left: 5px;
+ }
+
+ nav {
+    grid-area: nav;
+ }
+
+
+ #grilla {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "busqueda busqueda busqueda"
+      "nav peliculas peliculas"
+      "footer footer footer";
+    grid-template-rows: 100px 150px; 
+    grid-template-columns: 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+ }
+ .barra{
+     text-align: center;
+     font-size: 20px;
+ }
+ #generos{
+     list-style-type: none;
+     margin-top: 230px;
+     font-size: 25px;
+     font-family: 'Cuprum', sans-serif;
+ }
+
+ #imagenes-alineadas{
+     display: flex;
+     flex-direction: row;
+ }
+
+ .alineacion-centrada{
+     display: flex;
+     flex-direction: row;
+ }
+
+ section#watchlist{
+     grid-area: watchlist;
+ }
+
+ section#recomendaciones{
+     grid-area: recomendaciones;
+ }
+
+
+ #grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "watchlist watchlist watchlist"
+      "recomendaciones recomendaciones recomendaciones"
+      "footer footer footer";
+    grid-template-rows: 280px; 
+    grid-template-columns: 100%;
+ }
+ 
+ #espaciado-izquierda{
+     padding-left: 50px;
+ }
